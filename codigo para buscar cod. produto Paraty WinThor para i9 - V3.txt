@@ -1,0 +1,65 @@
+=SE(A6<>"";
+	SE(B6<>""
+		;
+		SEERRO(PROCV(B6;$Planilha2.A:B;2;0)
+			;
+			SEERRO(PROCV(E6;$Planilha2.D:E;2;0)
+				;
+				SEERRO(PROCV(E6;$Planilha2.D:E;2;1)
+					;
+					SEERRO(PROCV(E6;$Planilha2.G:H;2;0)
+						;
+						SEERRO(PROCV(E6;$Planilha2.J:J;1;0)
+							;
+							"Cod. não encontado em nenhum dos 4 casos!"
+							)	
+						)
+					)
+				)
+			)
+		;
+		SE(B6="SEM GTIN"
+			;
+			SEERRO(PROCV(E6;$Planilha2.D:E;2;0)
+				;
+				SEERRO(PROCV(E6;$Planilha2.D:E;2;1)
+					;
+					SEERRO(PROCV(E6;$Planilha2.G:H;2;0)
+						;
+						SEERRO(PROCV(B6;$Planilha2.A:B;2;0)
+							;
+							SEERRO(PROCV(E6;$Planilha2.J:J;1;0)
+								;
+								"Cod. não encontado em nenhum dos 4 casos!"
+								)
+							)
+						)
+					)
+				)
+			;
+			SE(B6=""
+				;
+				SEERRO(PROCV(E6;$Planilha2.D:E;2;0)
+					;
+					SEERRO(PROCV(E6;$Planilha2.D:E;2;1)
+						;
+						SEERRO(PROCV(E6;$Planilha2.G:H;2;0)
+							;
+							SEERRO(PROCV(E6;$Planilha2.A:B;2;0)
+								;
+								SEERRO(PROCV(E6;$Planilha2.J:J;1;0)
+									;
+									"Cod. não encontado em nenhum dos 4 casos!"
+									)
+								)
+							)
+						)
+					)
+				;
+				"Outra Exceção para verificar!"
+				)
+			)
+		)
+	;	
+	"Cod. produto vazio!"
+	)
