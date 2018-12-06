@@ -11,7 +11,10 @@
 						;
 						SEERRO(PROCV(E6;$Planilha2.J:J;1;0)
 							;
-							"Cod. não encontado em nenhum dos 4 casos!"
+							SEERRO(PROCV(B6;$Planilha2.L:M;2;0)
+								;
+								"Cod. não encontado em nenhum dos 5 casos!"
+								)
 							)	
 						)
 					)
@@ -30,7 +33,10 @@
 							;
 							SEERRO(PROCV(E6;$Planilha2.J:J;1;0)
 								;
-								"Cod. não encontado em nenhum dos 4 casos!"
+								SEERRO(PROCV(B6;$Planilha2.L:M;2;0)
+									;
+									"Cod. não encontado em nenhum dos 5 casos!"
+									)
 								)
 							)
 						)
@@ -49,7 +55,10 @@
 								;
 								SEERRO(PROCV(E6;$Planilha2.J:J;1;0)
 									;
-									"Cod. não encontado em nenhum dos 4 casos!"
+									SEERRO(PROCV(B6;$Planilha2.L:M;2;0)
+										;
+										"Cod. não encontado em nenhum dos 5 casos!"
+										)
 									)
 								)
 							)
